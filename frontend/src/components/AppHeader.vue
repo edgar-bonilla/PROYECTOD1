@@ -1,10 +1,16 @@
 <template>
   <header class="app-header">
     <div class="logo">
-      <img src="/img/logo.png" alt="Logo Automóviles" />
+      <nav>
+      <ul>
+        <li class=""><a href="/">Inicio</a></li>
+      
+      </ul>
+    </nav>
     </div>
     <nav>
       <ul>
+       
         <li><a href="/automoviles">Automóviles</a></li>
         <li><a href="/fabricantes">Fabricantes</a></li>
         <li><a href="/disenadores">Diseñadores</a></li>
@@ -20,7 +26,6 @@ export default {
 </script>
 
 <style scoped>
-/* ----- ESTILO GENERAL ----- */
 .app-header {
   position: fixed;
   top: 0;
@@ -35,17 +40,6 @@ export default {
   border-bottom: 3px solid #FF8C00; 
   box-sizing: border-box;
 }
-
-.logo img {
-  width: 160px; 
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.logo img:hover {
-  transform: scale(1.1); 
-}
-
 nav ul {
   display: flex;
   list-style: none;
@@ -70,24 +64,4 @@ nav ul li a:hover {
   transform: scale(1.1); 
 }
 
-@media (max-width: 768px) {
-  .app-header {
-    flex-direction: column; 
-    align-items: center;
-    padding: 15px;
-  }
-
-  nav ul {
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 10px 0; 
-  }
-
-  .logo img {
-    width: 130px; 
-  }
-}
 </style>
