@@ -2,18 +2,16 @@
   <header class="app-header">
     <div class="logo">
       <nav>
-      <ul>
-        <li class=""><a href="/">Inicio</a></li>
-      
-      </ul>
-    </nav>
+        <ul>
+          <li><router-link to="/home">Inicio</router-link></li>
+        </ul>
+      </nav>
     </div>
     <nav>
       <ul>
-       
-        <li><a href="/automoviles">Automóviles</a></li>
-        <li><a href="/fabricantes">Fabricantes</a></li>
-        <li><a href="/disenadores">Diseñadores</a></li>
+        <li><router-link to="/automoviles">Automóviles</router-link></li>
+        <li><router-link to="/fabricantes">Fabricantes</router-link></li>
+        <li><router-link to="/disenadores">Diseñadores</router-link></li>
       </ul>
     </nav>
   </header>
@@ -21,10 +19,9 @@
 
 <script>
 export default {
-  name: 'AppHeader'
+  name: 'AppHeader',
 };
 </script>
-
 <style scoped>
 .app-header {
   position: fixed;

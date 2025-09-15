@@ -5,7 +5,7 @@ import AppFabricantes from '../views/AppFabricantes.vue';
 import AppDisenadores from '../views/AppDisenadores.vue';
 
 const routes = [
-  { path: '/', redirect: '/home' }, // Redirigir la raíz a /home
+  { path: '/', redirect: '/home' }, // Redirige la raíz a /home
   { path: '/home', component: HomePage },
   { path: '/automoviles', component: AppAutomoviles },
   { path: '/fabricantes', component: AppFabricantes },
@@ -13,7 +13,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(), 
   routes,
 });
 
